@@ -71,6 +71,8 @@ convert().from('l').possibilities()
 convert().from('kg').possibilities()
 // [ 'mcg', 'mg', 'g', 'kg', 'oz', 'lb' ]
 ```
+convert().from('kg').possibility('metric')
+// [all possibilities for converson of kg in metric system]
 
 You can also get the possible conversions for a measure:
 ```js
