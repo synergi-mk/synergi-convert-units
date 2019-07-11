@@ -1,23 +1,47 @@
 {
-  "name": "convert-units",
-  "version": "2.3.4",
-  "description": "Convert between quantities in different units",
-  "main": "lib",
-  "dependencies": {
-    "lodash.keys": "2.3.x",
-    "lodash.foreach": "2.3.x"
+  "_from": "github:gokigemini/convert-units",
+  "_id": "convert-units@2.3.4",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/convert-units",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "convert-units@github:gokigemini/convert-units",
+    "name": "convert-units",
+    "escapedName": "convert-units",
+    "rawSpec": "github:gokigemini/convert-units",
+    "saveSpec": "github:gokigemini/convert-units",
+    "fetchSpec": null,
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:gokigemini/convert-units#4e20341e7e7ce626aa98d3166c85487c1d5fbaf3",
+  "_spec": "convert-units@github:gokigemini/convert-units",
+  "_where": "/Users/goranja/Project/unitsconv/iot-web",
+  "author": {
+    "name": "Ben Ng",
+    "email": "me@benng.me",
+    "url": "http://benng.me"
+  },
+  "bugs": {
+    "url": "https://github.com/ben-ng/convert-units/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash.foreach": "2.3.x",
+    "lodash.keys": "2.3.x"
+  },
+  "deprecated": false,
+  "description": "Convert between quantities in different units",
   "devDependencies": {
     "assert-diff": "^1.1.0",
     "jake": "8.0.12"
   },
-  "scripts": {
-    "test": "jake test --trace"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ben-ng/convert-units.git"
-  },
+  "homepage": "https://github.com/ben-ng/convert-units#readme",
   "keywords": [
     "metric",
     "imperial",
@@ -25,6 +49,15 @@
     "ratio",
     "fraction"
   ],
-  "author": "Ben Ng <me@benng.me> (http://benng.me)",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "lib",
+  "name": "convert-units",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ben-ng/convert-units.git"
+  },
+  "scripts": {
+    "test": "jake test --trace"
+  },
+  "version": "2.3.4"
 }
