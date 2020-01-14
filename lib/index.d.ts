@@ -26,6 +26,10 @@ declare module "convert-units" {
   type uHumidity = "F/RH"; // Humidity
   type uRelativeHumidity = "RH"; // Relative Humidity
   type uTorque = "Nm" | "lb-ft"; // Torque
+  type uGaugePressure = "PSig"; // Gauge Pressure
+  type uCurrency = "$"; // Currency
+  type uPercentage = "%"; // Percentage
+  type uPulseFrequency = "pulses/h"; // Pulse Frequency
 
   type unit = uDistance
     | uArea
@@ -53,7 +57,11 @@ declare module "convert-units" {
     | uDensity
     | uHumidity
     | uRelativeHumidity
-    | uTorque;
+    | uTorque
+    | uGaugePressure
+    | uCurrency
+    | uPercentage
+    | uPulseFrequency;
 
   type measure = "distance"
     | "area"
@@ -81,7 +89,11 @@ declare module "convert-units" {
     | "density"
     | "humidity"
     | "relativeHumidity"
-    | "torque";
+    | "torque"
+    | "gaugePressure"
+    | "currency"
+    | "percentage"
+    | "Pulse Frequency";
 
   type system = "metric"
     | "imperial"
