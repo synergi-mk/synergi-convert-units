@@ -15,7 +15,7 @@ declare module "convert-units" {
   type uPartsPer = "ppm" | "ppb" | "ppt" | "ppq"; // Parts-Per
   type uVoltage = "V" | "mV" | "kV"; // Voltage
   type uCurrent = "A" | "mA" | "kA"; // Current
-  type uPower = "W" | "mW" | "kM" | "MW" | "GW";
+  type uPower = "W" | "mW" | "kM" | "MW" | "GW" | "HP ";
   type uApparentPower = "VA" | "mVA" | "kVA" | "MVA" | "GVA"; // Apparent Power
   type uReactivePower = "VAR" | "mVAR" | "kVAR" | "MVAR" | "GVAR"; // Reactive Power
   type uEnergy = "Wh" | "mWh" | "kWh" | "MWh" | "GWh" | "J" | "kJ"; // Energy
@@ -30,6 +30,7 @@ declare module "convert-units" {
   type uCurrency = "$"; // Currency
   type uPercentage = "%"; // Percentage
   type uPulseFrequency = "pulses/h"; // Pulse Frequency
+  type uStandAlone = " " | "%"; // Stand alone units
 
   type unit = uDistance
     | uArea
@@ -61,7 +62,8 @@ declare module "convert-units" {
     | uGaugePressure
     | uCurrency
     | uPercentage
-    | uPulseFrequency;
+    | uPulseFrequency
+    | uStandAlone;
 
   type measure = "distance"
     | "area"
@@ -93,7 +95,8 @@ declare module "convert-units" {
     | "gaugePressure"
     | "currency"
     | "percentage"
-    | "Pulse Frequency";
+    | "Pulse Frequency"
+    | "Stand alone";
 
   type system = "metric"
     | "imperial"
@@ -107,6 +110,7 @@ declare module "convert-units" {
     toBest(options?: { exclude?: unit[], cutOffNumber?: number }): { val: number, unit: string, singular: string, plural: string };
     getUnit<T extends unit>(abbr: T): { abbr: T, measure: measure, system: system, unit: { name: { singular: string, plural: string }, to_anchor: number } };
     describe<T extends unit>(abbr: T): { abbr: T, measure: measure, system: system, singular: string, plural: string };
+    singleSystem<T extends unit>(abbr: T): any;
     list(measure?: measure): unit[];
     private throwUnsupportedUnitError(what: string): void;
     possibilities(measure?: measure): unit[];
