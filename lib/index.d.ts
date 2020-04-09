@@ -14,7 +14,7 @@ declare module "convert-units" {
   type uIlluminance = "lx" | "ft-cd"; // Illumunance
   type uPartsPer = "ppm" | "ppb" | "ppt" | "ppq"; // Parts-Per
   type uVoltage = "V" | "mV" | "kV"; // Voltage
-  type uCurrent = "A" | "mA" | "kA"; // Current
+  type uCurrent = "A" | "mA" | "pA" | "kA"; // Current
   type uPower = "W" | "mW" | "kM" | "MW" | "GW" | "HP ";
   type uApparentPower = "VA" | "mVA" | "kVA" | "MVA" | "GVA"; // Apparent Power
   type uReactivePower = "VAR" | "mVAR" | "kVAR" | "MVAR" | "GVAR"; // Reactive Power
