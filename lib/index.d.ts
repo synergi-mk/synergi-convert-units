@@ -15,7 +15,7 @@ declare module "convert-units" {
   type uPartsPer = "ppm" | "ppb" | "ppt" | "ppq"; // Parts-Per
   type uVoltage = "V" | "mV" | "kV"; // Voltage
   type uCurrent = "A" | "mA" | "pA" | "kA"; // Current
-  type uPower = "W" | "mW" | "kM" | "MW" | "GW" | "HP ";
+  type uPower = "W" | "mW" | "kM" | "MW" | "GW" | "HP";
   type uApparentPower = "VA" | "mVA" | "kVA" | "MVA" | "GVA"; // Apparent Power
   type uReactivePower = "VAR" | "mVAR" | "kVAR" | "MVAR" | "GVAR"; // Reactive Power
   type uEnergy = "Wh" | "mWh" | "kWh" | "MWh" | "GWh" | "J" | "kJ"; // Energy
@@ -30,7 +30,9 @@ declare module "convert-units" {
   type uCurrency = "$"; // Currency
   type uPercentage = "%"; // Percentage
   type uPulseFrequency = "pulses/h"; // Pulse Frequency
-  type uStandAlone = " " | "%"; // Stand alone units
+  type uData = " " | "%"; // Data 
+  type uRotationalSpeed = "Hz" | "rpm" | "rad/s"; // Rotational speed 
+  type uScalar = "Float" | "Integer" | "Boolean" | "Enum"; // Rotational speed 
 
   type unit = uDistance
     | uArea
@@ -63,7 +65,9 @@ declare module "convert-units" {
     | uCurrency
     | uPercentage
     | uPulseFrequency
-    | uStandAlone;
+    | uData
+    | uRotationalSpeed
+    | uScalar;
 
   type measure = "distance"
     | "area"
@@ -92,11 +96,13 @@ declare module "convert-units" {
     | "humidity"
     | "relativeHumidity"
     | "torque"
-    | "gaugePressure"
-    | "currency"
-    | "percentage"
+    | "Gauge pressure"
+    | "Currency"
+    | "Percentage"
     | "Pulse Frequency"
-    | "Stand alone";
+    | "Data"
+    | "Rotational speed"
+    | "Scalar";
 
   type system = "metric"
     | "imperial"
