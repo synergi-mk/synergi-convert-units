@@ -33,6 +33,7 @@ declare module "convert-units" {
   type uData = " " | "%"; // Data 
   type uRotationalSpeed = "Hz" | "rpm" | "rad/s"; // Rotational speed 
   type uScalar = "Float" | "Integer" | "Boolean" | "Enum"; // Rotational speed 
+  type uPH = "pH";
 
   type unit = uDistance
     | uArea
@@ -67,7 +68,8 @@ declare module "convert-units" {
     | uPulseFrequency
     | uData
     | uRotationalSpeed
-    | uScalar;
+    | uScalar
+    | uPH;
 
   type measure = "distance"
     | "area"
@@ -102,7 +104,8 @@ declare module "convert-units" {
     | "Pulse Frequency"
     | "Data"
     | "Rotational speed"
-    | "Scalar";
+    | "Scalar"
+    | "pH";
 
   type system = "metric"
     | "imperial"
