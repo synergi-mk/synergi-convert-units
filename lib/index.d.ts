@@ -96,6 +96,7 @@ declare module "convert-units" {
     | "vibration"
     | "density"
     | "humidity"
+    | "force"
     | "relativeHumidity"
     | "torque"
     | "Gauge pressure"
@@ -105,6 +106,7 @@ declare module "convert-units" {
     | "Data"
     | "Rotational speed"
     | "Scalar"
+    | "charge"
     | "pH";
 
   type system = "metric"
@@ -117,6 +119,7 @@ declare module "convert-units" {
     from(from: unit): this;
     to(to: unit): number;
     toBest(options?: { exclude?: unit[], cutOffNumber?: number }): { val: number, unit: string, singular: string, plural: string };
+    checkUnitMeasurement(checkUnit: string, checkMeasure: string): boolean;
     getUnit<T extends unit>(abbr: T): { abbr: T, measure: measure, system: system, unit: { name: { singular: string, plural: string }, to_anchor: number } };
     describe<T extends unit>(abbr: T): { abbr: T, measure: measure, system: system, singular: string, plural: string };
     singleSystem<T extends unit>(abbr: T): any;
