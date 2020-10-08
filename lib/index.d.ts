@@ -1,9 +1,9 @@
 declare module "convert-units" {
   type uDistance = "mm" | "cm" | "m" | "km" | "in" | "ft-us" | "ft" | "mi"; // Distance
-  type uArea = "mm2" | "cm2" | "m2" | "ha" | "km2" | "in2" | "ft2" | "ac" | "mi2"; // Area
+  type uArea = "mm²" | "cm²" | "m²" | "ha" | "km²" | "in²" | "ft²" | "ac" | "mi²"; // Area
   type uMass = "mcg" | "mg" | "g" | "kg" | "oz" | "lb" | "mt" | "t" // Mass
-  type uVolume = "mm3" | "cm3" | "ml" | "l" | "kl" | "m3" | "km3" | "tsp" | "Tbs" | "in3" | "fl-oz" | "cup" | "pnt" | "qt" | "gal" | "ft3" | "yd3" // Volume
-  type uVolumeFlowRate = "mm3/s" | "cm3/s" | "ml/s" | "cl/s" | "dl/s" | "l/s" | "l/min" | "l/h" | "kl/s" | "kl/min" | "kl/h" | "m3/s" | "m3/min" | "m3/h" | "km3/s" | "tsp/s" | "Tbs/s" | "in3/s" | "in3/min" | "in3/h" | "fl-oz/s" | "fl-oz/min" | "fl-oz/h" | "cup/s" | "pnt/s" | "pnt/min" | "pnt/h" | "qt/s" | "gal/s" | "gal/min" | "gal/h" | "ft3/s" | "ft3/min" | "ft3/h" | "yd3/s" | "yd3/min" | "yd3/h"; // Volume Flow Rate
+  type uVolume = "mm³" | "cm³" | "ml" | "l" | "kl" | "m³" | "km³" | "tsp" | "Tbs" | "in³" | "fl-oz" | "cup" | "pnt" | "qt" | "gal" | "ft³" | "yd³" // Volume
+  type uVolumeFlowRate = "mm³/s" | "cm³/s" | "ml/s" | "cl/s" | "dl/s" | "l/s" | "l/min" | "l/h" | "kl/s" | "kl/min" | "kl/h" | "m³/s" | "m³/min" | "m³/h" | "km³/s" | "tsp/s" | "Tbs/s" | "in³/s" | "in³/min" | "in³/h" | "fl-oz/s" | "fl-oz/min" | "fl-oz/h" | "cup/s" | "pnt/s" | "pnt/min" | "pnt/h" | "qt/s" | "gal/s" | "gal/min" | "gal/h" | "ft³/s" | "ft³/min" | "ft³/h" | "yd³/s" | "yd³/min" | "yd³/h"; // Volume Flow Rate
   type uTemperature = "C" | "F" | "K" | "R"; // Temperature
   type uTime = "ns" | "mu" | "ms" | "s" | "min" | "h" | "d" | "week" | "month" | "year"; // Time
   type uFrequency = "Hz" | "mHz" | "kHz" | "MHz" | "GHz" | "THz" | "rpm" | "deg/s" | "rad/s"; // Frequency
@@ -22,7 +22,7 @@ declare module "convert-units" {
   type uReactiveEnergy = "VARh" | "mVARh" | "kVARh" | "MVARh" | "GVARH"; // Reactive Energy
   type uAngle = "deg" | "rad" | "grad" | "arcmin" | "arcsec"; // Angle
   type uVibration = "mm/s"; // Vibration
-  type uDensity = "mg/m3" | "g/m3" | "g/ft3" | "lb/ft3"; // Density
+  type uDensity = "mg/m³" | "g/m³" | "g/ft³" | "lb/ft³"; // Density
   type uHumidity = "F/RH"; // Humidity
   type uRelativeHumidity = "RH"; // Relative Humidity
   type uTorque = "Nm" | "lb-ft"; // Torque
