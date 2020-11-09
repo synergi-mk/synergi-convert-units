@@ -197,6 +197,7 @@ declare module 'convert-units' {
     list(measure?: measure | string): unit[];
     private throwUnsupportedUnitError(what: string): void;
     possibilities(measure?: measure | string): unit[];
+    possibility(originSystem: string): unit[];
     measures(): measure[];
   }
 
