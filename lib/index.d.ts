@@ -194,7 +194,7 @@ declare module 'convert-units' {
       plural: string;
     };
     singleSystem<T extends unit>(abbr: T | string): any;
-    list(measure?: measure): unit[];
+    list(measure?: measure | string): unit[];
     private throwUnsupportedUnitError(what: string): void;
     possibilities(measure?: measure | string): unit[];
     measures(): measure[];
