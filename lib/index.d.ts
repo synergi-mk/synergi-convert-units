@@ -169,15 +169,15 @@ declare module 'convert-units' {
 
   class Convert {
     constructor(numerator: number, denominator?: number);
-    from(from: unit): this;
-    to(to: unit): number;
+    from(from: unit | string): this;
+    to(to: unit | string): number;
     toBest(options?: {
       exclude?: unit[];
       cutOffNumber?: number;
     }): { val: number; unit: string; singular: string; plural: string };
     checkUnitMeasurement(checkUnit: string, checkMeasure: string): boolean;
     getUnit<T extends unit>(
-      abbr: T
+      abbr: T | string
     ): {
       abbr: T;
       measure: measure;
@@ -185,7 +185,7 @@ declare module 'convert-units' {
       unit: { name: { singular: string; plural: string }; to_anchor: number };
     };
     describe<T extends unit>(
-      abbr: T
+      abbr: T | string
     ): {
       abbr: T;
       measure: measure;
@@ -193,10 +193,10 @@ declare module 'convert-units' {
       singular: string;
       plural: string;
     };
-    singleSystem<T extends unit>(abbr: T): any;
+    singleSystem<T extends unit>(abbr: T | string): any;
     list(measure?: measure): unit[];
     private throwUnsupportedUnitError(what: string): void;
-    possibilities(measure?: measure): unit[];
+    possibilities(measure?: measure | string): unit[];
     measures(): measure[];
   }
 
