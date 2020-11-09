@@ -168,7 +168,7 @@ declare module 'convert-units' {
   type system = 'metric' | 'imperial' | 'bits' | 'bytes';
 
   class Convert {
-    constructor(numerator: number, denominator: number);
+    constructor(numerator: number, denominator?: number);
     from(from: unit): this;
     to(to: unit): number;
     toBest(options?: {
@@ -200,7 +200,7 @@ declare module 'convert-units' {
     measures(): measure[];
   }
 
-  function convert(value: number): Convert;
+  function convert(value?: number): Convert;
 
   export = convert;
 }
