@@ -8,12 +8,12 @@ tests['l/s to l/s'] = function () {
   assert.strictEqual(convert(2).from('l/s').to('l/s'), 2);
 };
 
-tests['mm3/s to l/s'] = function () {
-  assert.strictEqual(convert(1000000).from('mm3/s').to('l/s'), 1);
+tests['mm³/s to l/s'] = function () {
+  assert.strictEqual(convert(1000000).from('mm³/s').to('l/s'), 1);
 };
 
-tests['cm3/s to l/s'] = function () {
-  assert.strictEqual(convert(100).from('cm3/s').to('l/s'), 1 / 10);
+tests['cm³/s to l/s'] = function () {
+  assert.strictEqual(convert(100).from('cm³/s').to('l/s'), 1 / 10);
 };
 
 tests['dl/s to l/s'] = function () {
@@ -28,12 +28,12 @@ tests['ml/s to l/s'] = function () {
   assert.strictEqual(convert(100).from('ml/s').to('l/s'), 1 / 10);
 };
 
-tests['m3/s to l/s'] = function () {
-  assert.strictEqual(convert(1).from('m3/s').to('l/s'), 1000);
+tests['m³/s to l/s'] = function () {
+  assert.strictEqual(convert(1).from('m³/s').to('l/s'), 1000);
 };
 
-tests['km3/s to l/s'] = function () {
-  assert.strictEqual(convert(1).from('km3/s').to('l/s'), 1000000000000);
+tests['km³/s to l/s'] = function () {
+  assert.strictEqual(convert(1).from('km³/s').to('l/s'), 1000000000000);
 };
 
 tests['l/s to ml/s'] = function () {
@@ -84,11 +84,11 @@ tests['l/s to kl/h'] = function () {
   assert.strictEqual(convert(1).from('l/s').to('kl/h'), 3.6);
 };
 
-tests['l/s to m3/s'] = function () {
-  assert.strictEqual(convert(1).from('l/s').to('m3/s'), 0.001);
+tests['l/s to m³/s'] = function () {
+  assert.strictEqual(convert(1).from('l/s').to('m³/s'), 0.001);
 };
 
-tests['m3/s to m3/h'] = function () {
+tests['m3/s to m³/h'] = function () {
   assert.strictEqual(convert(1).from('kl/s').to('kl/h'), 3600);
 };
 
@@ -99,27 +99,27 @@ tests['tsp/s to l/s'] = function () {
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['in3/s to l/s'] = function () {
+tests['in³/s to l/s'] = function () {
   var expected = 0.0163871,
-    actual = convert(1).from('in3/s').to('l/s');
+    actual = convert(1).from('in³/s').to('l/s');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['in3/s to fl-oz/s'] = function () {
+tests['in³/s to fl-oz/s'] = function () {
   var expected = 0.554113,
-    actual = convert(1).from('in3/s').to('fl-oz/s');
+    actual = convert(1).from('in³/s').to('fl-oz/s');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['m3/s to yd3/s'] = function () {
+tests['m³/s to yd³/s'] = function () {
   var expected = 1.30795,
-    actual = convert(1).from('m3/s').to('yd3/s');
+    actual = convert(1).from('m³/s').to('yd³/s');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['ft3/s to cm3/s'] = function () {
+tests['ft³/s to cm³/s'] = function () {
   var expected = 28316.8,
-    actual = convert(1).from('ft3/s').to('cm3/s');
+    actual = convert(1).from('ft³/s').to('cm³/s');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
@@ -159,27 +159,27 @@ tests['kl/min to l/h'] = function () {
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['l/s to m3/h'] = function () {
+tests['l/s to m³/h'] = function () {
   var expected = 3.6,
-    actual = convert(1).from('l/s').to('m3/h');
+    actual = convert(1).from('l/s').to('m³/h');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['m3/s to kl/h'] = function () {
+tests['m³/s to kl/h'] = function () {
   var expected = 3600,
-    actual = convert(1).from('m3/s').to('kl/h');
+    actual = convert(1).from('m³/s').to('kl/h');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['fl-oz/s to m3/min'] = function () {
+tests['fl-oz/s to m³/min'] = function () {
   var expected = 0.00177441177,
-    actual = convert(1).from('fl-oz/s').to('m3/min');
+    actual = convert(1).from('fl-oz/s').to('m³/min');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['ft3/min to l/s'] = function () {
+tests['ft³/min to l/s'] = function () {
   var expected = 0.471947443,
-    actual = convert(1).from('ft3/min').to('l/s');
+    actual = convert(1).from('ft³/min').to('l/s');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
@@ -189,9 +189,9 @@ tests['pnt/min to kl/h'] = function () {
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 
-tests['yd3/h to m3/min'] = function () {
+tests['yd³/h to m³/min'] = function () {
   var expected = 0.012742581,
-    actual = convert(1).from('yd3/h').to('m3/min');
+    actual = convert(1).from('yd³/h').to('m³/min');
   assert.ok(percentError(expected, actual) < ACCURACY, 'Expected: ' + expected + ', Actual: ' + actual);
 };
 

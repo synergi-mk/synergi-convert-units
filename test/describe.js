@@ -1,12 +1,11 @@
 var convert = require('../lib'),
   assert = require('assert'),
   tests = {};
-
 tests['get kg'] = function () {
   var actual = convert().describe('kg'),
     expected = {
       abbr: 'kg',
-      measure: 'mass',
+      measure: 'Mass',
       system: 'metric',
       singular: 'Kilogram',
       plural: 'Kilograms'
@@ -19,7 +18,7 @@ tests['get ac'] = function () {
   var actual = convert().describe('ac'),
     expected = {
       abbr: 'ac',
-      measure: 'area',
+      measure: 'Area',
       system: 'imperial',
       singular: 'Acre',
       plural: 'Acres'

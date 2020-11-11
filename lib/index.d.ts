@@ -65,6 +65,7 @@ declare module 'convert-units' {
   type uPace = 's/m' | 'min/km' | 's/ft' | 'min/km'; // Pace
   type uPressure = 'Pa' | 'hPa' | 'kPa' | 'MPa' | 'bar' | 'torr' | 'psi' | 'ksi'; // Pressure
   type uDitgital = 'b' | 'Kb' | 'Mb' | 'Gb' | 'Tb' | 'B' | 'KB' | 'MB' | 'GB' | 'TB'; // Digital
+  type uEach = 'ea' | 'dz';
   type uIlluminance = 'lx' | 'ft-cd'; // Illumunance
   type uPartsPer = 'ppm' | 'ppb' | 'ppt' | 'ppq'; // Parts-Per
   type uVoltage = 'V' | 'mV' | 'kV'; // Voltage
@@ -124,7 +125,8 @@ declare module 'convert-units' {
     | uData
     | uRotationalSpeed
     | uScalar
-    | uPH;
+    | uPH
+    | uEach;
 
   type measure =
     | 'distance'

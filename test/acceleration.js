@@ -2,7 +2,7 @@ var convert = require('../lib'),
   assert = require('assert'),
   tests = {};
 
-tests['g to m/s²'] = function () {
+tests['g to m/s2'] = function () {
   assert.strictEqual(convert(1).from('g-force').to('m/s²'), 9.80665);
 };
 
