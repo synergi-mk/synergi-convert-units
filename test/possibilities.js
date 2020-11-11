@@ -43,7 +43,7 @@ tests['kg possibilities'] = function () {
 };
 tests['m possibilities'] = function () {
   var actual = convert().from('m').possibilities(),
-    expected = ['mm', 'cm', 'm', 'km', 'in', 'yd', 'ft-us', 'ft','CF', 'fathom', 'mi', 'nMi'];
+    expected = ['mm', 'cm', 'm', 'km', 'in', 'yd', 'ft-us', 'ft', 'CF', 'fathom', 'mi', 'nMi'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -103,34 +103,34 @@ tests['volume flow rate possibilities'] = function () {
       'l/min',
       'l/h',
       'kl/s',
-      'kl/min',    
-      'kl/h',    
+      'kl/min',
+      'kl/h',
       'm³/s',
-      'm³/min',    
-      'm³/h',    
+      'm³/min',
+      'm³/h',
       'km³/s',
-      'tsp/s',     
-      'Tbs/s',   
+      'tsp/s',
+      'Tbs/s',
       'in³/s',
-      'in³/min',   
-      'in³/h',   
+      'in³/min',
+      'in³/h',
       'fl-oz/s',
-      'fl-oz/min', 
-      'fl-oz/h', 
+      'fl-oz/min',
+      'fl-oz/h',
       'cup/s',
-      'pnt/s',     
-      'pnt/min', 
+      'pnt/s',
+      'pnt/min',
       'pnt/h',
-      'qt/s',      
-      'gal/s',   
+      'qt/s',
+      'gal/s',
       'gal/min',
-      'gal/h',     
-      'ft³/s',   
+      'gal/h',
+      'ft³/s',
       'ft³/min',
-      'CFM',       
-      'ft³/h',   
+      'CFM',
+      'ft³/h',
       'yd³/s',
-      'yd³/min',   
+      'yd³/min',
       'yd³/h'
     ];
   assert.deepEqual(actual.sort(), expected.sort());
@@ -138,7 +138,7 @@ tests['volume flow rate possibilities'] = function () {
 
 tests['length possibilities'] = function () {
   var actual = convert().possibilities('Length'),
-    expected = ['mm', 'cm', 'm', 'km', 'in', 'yd', 'ft-us', 'ft','CF', 'fathom', 'mi', 'nMi'];
+    expected = ['mm', 'cm', 'm', 'km', 'in', 'yd', 'ft-us', 'ft', 'CF', 'fathom', 'mi', 'nMi'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -168,13 +168,13 @@ tests['partsPer possibilities'] = function () {
 
 tests['pressure possibilities'] = function () {
   var actual = convert().possibilities('Pressure'),
-    expected = ['Pa', 'kPa', 'MPa', 'hPa', 'bar', 'torr', 'psi', 'ksi','WC','ba'];
+    expected = ['Pa', 'kPa', 'MPa', 'hPa', 'bar', 'torr', 'psi', 'ksi', 'WC', 'ba'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
 tests['speed possibilities'] = function () {
   var actual = convert().possibilities('Speed'),
-    expected = ['m/s', 'km/h', 'm/h', 'knot', 'ft/s','FPM','ft/m','mm/sec','in/s'];
+    expected = ['m/s', 'km/h', 'm/h', 'knot', 'ft/s', 'FPM', 'ft/m', 'mm/sec', 'in/s'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -186,7 +186,7 @@ tests['pace possibilities'] = function () {
 
 tests['current possibilities'] = function () {
   var actual = convert().possibilities('Current'),
-    expected = ['A', 'mA', 'kA','pA'];
+    expected = ['A', 'mA', 'kA', 'pA'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -198,7 +198,7 @@ tests['voltage possibilities'] = function () {
 
 tests['power possibilities'] = function () {
   var actual = convert().possibilities('Power'),
-    expected = ['W', 'mW', 'kW', 'MW', 'GW','HP'];
+    expected = ['W', 'mW', 'kW', 'MW', 'GW', 'HP'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
