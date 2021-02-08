@@ -11,7 +11,12 @@ tests['Pa to Pa'] = function () {
 tests['Pa to kPa'] = function () {
   assert.strictEqual(convert(2000).from('Pa').to('kPa'), 2);
 };
-
+tests['Pa to in.wg'] = function () {
+  assert.strictEqual(convert(2000).from('Pa').to('in.wg'), 8.029286007980799);
+};
+tests['in.wg to Pa'] = function () {
+  assert.strictEqual(convert(8.029286007980799).from('in.wg').to('Pa'), 2000);
+};
 tests['kPa to Pa'] = function () {
   assert.strictEqual(convert(1).from('kPa').to('Pa'), 1000);
 };
