@@ -14,8 +14,20 @@ tests['Pa to kPa'] = function () {
 tests['Pa to in.wg'] = function () {
   assert.strictEqual(convert(2000).from('Pa').to('in.wg'), 8.029286007980799);
 };
+tests['Pa to WC'] = function () {
+  assert.strictEqual(convert(2000).from('Pa').to('WC'), 8.029286007980799);
+};
 tests['in.wg to Pa'] = function () {
   assert.strictEqual(convert(8.029286007980799).from('in.wg').to('Pa'), 2000);
+};
+tests['WC to Pa'] = function () {
+  assert.strictEqual(convert(8.029286007980799).from('WC').to('Pa'), 2000);
+};
+tests['WC to in.wg'] = function () {
+  assert.strictEqual(convert(1).from('WC').to('in.wg'), 1);
+};
+tests['in.wg to WC'] = function () {
+  assert.strictEqual(convert(1).from('in.wg').to('WC'), 1);
 };
 tests['kPa to Pa'] = function () {
   assert.strictEqual(convert(1).from('kPa').to('Pa'), 1000);
