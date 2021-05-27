@@ -11,23 +11,36 @@ tests['Pa to Pa'] = function () {
 tests['Pa to kPa'] = function () {
   assert.strictEqual(convert(2000).from('Pa').to('kPa'), 2);
 };
-tests['Pa to in.wg'] = function () {
-  assert.strictEqual(convert(2000).from('Pa').to('in.wg'), 8.029286007980799);
+tests['Pa to in.wg.'] = function () {
+  assert.strictEqual(convert(2000).from('Pa').to('in.wg.'), 8.029286007980799);
 };
 tests['Pa to WC'] = function () {
   assert.strictEqual(convert(2000).from('Pa').to('WC'), 8.029286007980799);
 };
-tests['in.wg to Pa'] = function () {
-  assert.strictEqual(convert(8.029286007980799).from('in.wg').to('Pa'), 2000);
+tests['in.wg. to Pa'] = function () {
+  assert.strictEqual(convert(8.029286007980799).from('in.wg.').to('Pa'), 2000);
 };
 tests['WC to Pa'] = function () {
   assert.strictEqual(convert(8.029286007980799).from('WC').to('Pa'), 2000);
 };
-tests['WC to in.wg'] = function () {
-  assert.strictEqual(convert(1).from('WC').to('in.wg'), 1);
+tests['mbar to bar'] = function () {
+  assert.strictEqual(convert(8000).from('mbar').to('bar'), 8);
 };
-tests['in.wg to WC'] = function () {
-  assert.strictEqual(convert(1).from('in.wg').to('WC'), 1);
+tests['mbar to Pa'] = function () {
+  assert.strictEqual(convert(8).from('mbar').to('Pa'), 800);
+};
+tests['mbar to psi'] = function () {
+  assert.strictEqual(convert(1).from('mbar').to('psi'), 0.014503768077999999);
+};
+tests['mbar to WC'] = function () {
+  assert.strictEqual(convert(1).from('mbar').to('WC'), 0.40146430039903996);
+};
+0.401865
+tests['WC to in.wg.'] = function () {
+  assert.strictEqual(convert(1).from('WC').to('in.wg.'), 1);
+};
+tests['in.wg. to WC'] = function () {
+  assert.strictEqual(convert(1).from('in.wg.').to('WC'), 1);
 };
 tests['kPa to Pa'] = function () {
   assert.strictEqual(convert(1).from('kPa').to('Pa'), 1000);

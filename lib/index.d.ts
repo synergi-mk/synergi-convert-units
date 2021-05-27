@@ -63,7 +63,7 @@ declare module 'convert-units' {
   type uFrequency = 'Hz' | 'mHz' | 'kHz' | 'MHz' | 'GHz' | 'THz' | 'rpm' | 'deg/s' | 'rad/s'; // Frequency
   type uSpeed = 'm/s' | 'km/h' | 'm/h' | 'knot' | 'ft/s'; // Speed
   type uPace = 's/m' | 'min/km' | 's/ft' | 'min/km'; // Pace
-  type uPressure = 'Pa' | 'hPa' | 'kPa' | 'MPa' | 'bar' | 'torr' | 'psi' | 'ksi'; // Pressure
+  type uPressure = 'Pa' | 'hPa' | 'kPa' | 'MPa' | 'bar' | 'mbar' |  'torr' | 'psi' | 'ksi'; // Pressure
   type uDitgital = 'b' | 'Kb' | 'Mb' | 'Gb' | 'Tb' | 'B' | 'KB' | 'MB' | 'GB' | 'TB'; // Digital
   type uEach = 'ea' | 'dz';
   type uIlluminance = 'lx' | 'ft-cd'; // Illumunance
