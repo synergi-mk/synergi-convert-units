@@ -89,6 +89,7 @@ declare module 'convert-units' {
   type uRotationalSpeed = 'Hz' | 'rpm' | 'rad/s'; // Rotational speed
   type uScalar = 'Float' | 'Integer' | 'Boolean' | 'Enum'; // Rotational speed
   type uPH = 'pH';
+  type uConcentration = 'concentration';
 
   type unit =
     | uDistance
@@ -126,6 +127,7 @@ declare module 'convert-units' {
     | uRotationalSpeed
     | uScalar
     | uPH
+    | uConcentration
     | uEach;
 
   type measure =
@@ -165,7 +167,8 @@ declare module 'convert-units' {
     | 'Rotational speed'
     | 'Scalar'
     | 'charge'
-    | 'pH';
+    | 'pH'
+    | 'concentration';
 
   type system = 'metric' | 'imperial' | 'bits' | 'bytes';
 

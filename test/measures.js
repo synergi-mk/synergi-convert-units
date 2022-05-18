@@ -42,7 +42,8 @@ tests['measures'] = function () {
       'Data',
       'Rotational speed',
       'Scalar',
-      'pH'
+      'pH',
+      'concentration'
     ];
   assert.deepEqual(actual, expected);
 };
