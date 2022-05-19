@@ -204,6 +204,7 @@ declare module 'convert-units' {
     possibilities(measure?: measure | string): unit[];
     possibility(originSystem: string): unit[];
     measures(): measure[];
+    unitsFromMeasure(measure:string):unit[];
   }
 
   function convert(value?: number): Convert;
