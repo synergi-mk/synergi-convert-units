@@ -3,19 +3,19 @@ var convert = require('../lib'),
   tests = {};
 
 tests['ppm to ppm'] = function () {
-  assert.strictEqual(convert(1).from('ppm').to('ppm'), 1);
+  assert.strictEqual(convert(1).from('ppmm').to('ppmm'), 1);
 };
 
 tests['ppb to ppb'] = function () {
-  assert.strictEqual(convert(1).from('ppb').to('ppb'), 1);
+  assert.strictEqual(convert(1).from('ppbb').to('ppbb'), 1);
 };
 
 tests['ppm to ppb'] = function () {
-  assert.strictEqual(convert(1).from('ppm').to('ppb'), 1000);
+  assert.strictEqual(convert(1).from('ppmm').to('ppbb'), 1000);
 };
 
 tests['ppb to ppm'] = function () {
-  assert.strictEqual(convert(1).from('ppb').to('ppm'), 0.001);
+  assert.strictEqual(convert(1).from('ppbb').to('ppmm'), 0.001);
 };
 
 tests['ppt to ppt'] = function () {
@@ -23,15 +23,15 @@ tests['ppt to ppt'] = function () {
 };
 
 tests['ppm to ppt'] = function () {
-  assert.strictEqual(convert(1).from('ppm').to('ppt'), 1000000);
+  assert.strictEqual(convert(1).from('ppmm').to('ppt'), 1000000);
 };
 
 tests['ppt to ppb'] = function () {
-  assert.strictEqual(convert(1).from('ppt').to('ppb'), 0.001);
+  assert.strictEqual(convert(1).from('ppt').to('ppbb'), 0.001);
 };
 
 tests['ppt to ppm'] = function () {
-  assert.strictEqual(convert(1).from('ppt').to('ppm'), 0.000001);
+  assert.strictEqual(convert(1).from('ppt').to('ppmm'), 0.000001);
 };
 
 tests['ppq to ppq'] = function () {
@@ -43,7 +43,7 @@ tests['ppq to ppt'] = function () {
 };
 
 tests['ppq to ppm'] = function () {
-  assert.strictEqual(convert(1).from('ppq').to('ppm'), 0.000000001);
+  assert.strictEqual(convert(1).from('ppq').to('ppmm'), 0.000000001);
 };
 
 module.exports = tests;

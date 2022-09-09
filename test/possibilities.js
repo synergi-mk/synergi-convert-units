@@ -162,7 +162,7 @@ tests['digital possibilities'] = function () {
 
 tests['partsPer possibilities'] = function () {
   var actual = convert().possibilities('PartsPer'),
-    expected = ['ppm', 'ppb', 'ppt', 'ppq'];
+    expected = ['ppmm', 'ppbb', 'ppt', 'ppq'];
   assert.deepEqual(actual.sort(), expected.sort());
 };
 
@@ -451,9 +451,9 @@ tests['all possibilities'] = function () {
       'oz',
       'pA',
       'pH',
-      '%',
-      'ppm',
-      'ppb',
+      '%%',
+      'ppmm',
+      'ppbb',
       'mg/m³',
       'mg/Nm³',
       'pC',

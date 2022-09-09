@@ -67,7 +67,7 @@ declare module 'convert-units' {
   type uDitgital = 'b' | 'Kb' | 'Mb' | 'Gb' | 'Tb' | 'B' | 'KB' | 'MB' | 'GB' | 'TB'; // Digital
   type uEach = 'ea' | 'dz';
   type uIlluminance = 'lx' | 'ft-cd'; // Illumunance
-  type uPartsPer = 'ppm' | 'ppb' | 'ppt' | 'ppq'; // Parts-Per
+  type uPartsPer = 'ppmm' | 'ppbb' | 'ppt' | 'ppq'; // Parts-Per
   type uVoltage = 'V' | 'mV' | 'kV'; // Voltage
   type uCurrent = 'A' | 'mA' | 'pA' | 'kA'; // Current
   type uPower = 'W' | 'mW' | 'kM' | 'MW' | 'GW' | 'hp';
