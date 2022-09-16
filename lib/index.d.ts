@@ -90,7 +90,7 @@ declare module 'convert-units' {
   type uScalar = 'Float' | 'Integer' | 'Boolean' | 'Enum'; // Rotational speed
   type uPH = 'pH';
   type uRelativeConcentration =  '%' | 'ppm' | 'ppb';
-  type uAbsoluteConcentration =   'mg/m³' | 'mg/Nm³'| 'mbar' | 'm³/sec' | '°C' | 'V' | 'DU' | 'mgC/m3';
+  type uAbsoluteConcentration =   'mg/m³' | 'mg/Nm³'| 'mbar' | 'm³/sec' | '°C' | 'V' | 'DU' | 'mgC/m³';
 
   type unit =
     | uDistance
