@@ -86,5 +86,8 @@ tests['Converter().from().to()'] = function () {
     console.log('Ok:', time);
   }
 };
-
+tests['Converter().allsensors'] = function () {
+  const start = Date.now();
+  console.log('mbarrrrr',  convert(1).checkConvertUnits('mg/m³','mbar'));
+};
 module.exports = tests;

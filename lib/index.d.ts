@@ -184,6 +184,8 @@ declare module 'convert-units' {
       cutOffNumber?: number;
     }): { val: number; unit: string; singular: string; plural: string };
     checkUnitMeasurement(checkUnit: string, checkMeasure: string): boolean;
+    checkConvertUnits(unit1:string, unit2:string):boolean;
+    getAllUnitMeasurement(checkUnit:string):string[];
     getUnit<T extends unit>(
       abbr: T | string
     ): {
