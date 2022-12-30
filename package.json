@@ -1,8 +1,12 @@
 {
-  "name": "convert-units",
+  "name": "synergi-convert-units",
   "version": "2.3.4",
   "description": "Convert between quantities in different units",
   "main": "lib",
+  "author": {
+    "name": "Synergi",
+    "email": "team@sinargy.se"
+  },
   "dependencies": {
     "lodash.keys": "2.3.x",
     "lodash.foreach": "2.3.x"
@@ -14,11 +18,12 @@
   },
   "scripts": {
     "test": "jake test --trace",
-    "prettier": "prettier --write lib/** test/**"
+    "prettier": "prettier --write lib/** test/**",
+    "release": "npm version patch && git push --follow-tags && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ben-ng/convert-units.git"
+    "url": "git://github.com/synergi-mk/synergi-convert-units.git"
   },
   "keywords": [
     "metric",
@@ -27,8 +32,6 @@
     "ratio",
     "fraction"
   ],
-  "author": "Ben Ng <me@benng.me> (http://benng.me)",
-  "license": "MIT",
   "prettier": {
     "trailingComma": "none",
     "singleQuote": true,
