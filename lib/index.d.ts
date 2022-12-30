@@ -1,4 +1,4 @@
-declare module 'convert-units' {
+declare module 'synergi-convert-units' {
   type uDistance = 'mm' | 'cm' | 'm' | 'km' | 'in' | 'ft-us' | 'ft' | 'mi'; // Distance
   type uArea = 'mm²' | 'cm²' | 'm²' | 'ha' | 'km²' | 'in²' | 'ft²' | 'ac' | 'mi²'; // Area
   type uMass = 'mcg' | 'mg' | 'g' | 'kg' | 'oz' | 'lb' | 'mt' | 't'; // Mass
@@ -63,7 +63,7 @@ declare module 'convert-units' {
   type uFrequency = 'Hz' | 'mHz' | 'kHz' | 'MHz' | 'GHz' | 'THz' | 'rpm' | 'deg/s' | 'rad/s'; // Frequency
   type uSpeed = 'm/s' | 'km/h' | 'm/h' | 'knot' | 'ft/s'; // Speed
   type uPace = 's/m' | 'min/km' | 's/ft' | 'min/km'; // Pace
-  type uPressure = 'Pa' | 'hPa' | 'kPa' | 'MPa' | 'bar' | 'mbar' |  'torr' | 'psi' | 'ksi'; // Pressure
+  type uPressure = 'Pa' | 'hPa' | 'kPa' | 'MPa' | 'bar' | 'mbar' | 'torr' | 'psi' | 'ksi'; // Pressure
   type uDitgital = 'b' | 'Kb' | 'Mb' | 'Gb' | 'Tb' | 'B' | 'KB' | 'MB' | 'GB' | 'TB'; // Digital
   type uEach = 'ea' | 'dz';
   type uIlluminance = 'lx' | 'ft-cd'; // Illumunance
@@ -89,8 +89,8 @@ declare module 'convert-units' {
   type uRotationalSpeed = 'Hz' | 'rpm' | 'rad/s'; // Rotational speed
   type uScalar = 'Float' | 'Integer' | 'Boolean' | 'Enum'; // Rotational speed
   type uPH = 'pH';
-  type uRelativeConcentration =  '%' | 'ppm' | 'ppb';
-  type uAbsoluteConcentration =   'mg/m³' | 'mg/Nm³'| 'mbar' | 'm³/sec' | '°C' | 'V' | 'DU' | 'mgC/m³';
+  type uRelativeConcentration = '%' | 'ppm' | 'ppb';
+  type uAbsoluteConcentration = 'mg/m³' | 'mg/Nm³' | 'mbar' | 'm³/sec' | '°C' | 'V' | 'DU' | 'mgC/m³';
 
   type unit =
     | uDistance
@@ -184,8 +184,8 @@ declare module 'convert-units' {
       cutOffNumber?: number;
     }): { val: number; unit: string; singular: string; plural: string };
     checkUnitMeasurement(checkUnit: string, checkMeasure: string): boolean;
-    checkConvertUnits(unit1:string, unit2:string):boolean;
-    getAllUnitMeasurement(checkUnit:string):string[];
+    checkConvertUnits(unit1: string, unit2: string): boolean;
+    getAllUnitMeasurement(checkUnit: string): string[];
     getUnit<T extends unit>(
       abbr: T | string
     ): {
@@ -209,7 +209,7 @@ declare module 'convert-units' {
     possibilities(measure?: measure | string): unit[];
     possibility(originSystem: string): unit[];
     measures(): measure[];
-    unitsFromMeasure(measure:string):unit[];
+    unitsFromMeasure(measure: string): unit[];
   }
 
   function convert(value?: number): Convert;
