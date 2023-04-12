@@ -1,6 +1,6 @@
 {
   "name": "synergi-convert-units",
-  "version": "2.3.8",
+  "version": "2.3.9",
   "description": "Convert between quantities in different units",
   "main": "lib",
   "author": {
